@@ -6,6 +6,12 @@
     <title>Scratch</title>
     <style type="text/css">
 
+      table {
+        border: 1px solid #ddd;
+      }
+      tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
 
       @media screen and (max-width: 500px) {
         table, thead, tbody, th, td, tr {
@@ -17,29 +23,21 @@
           left: -9999px;
         }
         td { 
-          /* Behave  like a "row" */
-          border: none;
-          border-bottom: 1px solid #eee; 
           position: relative;
           padding-left: 50%; 
-          white-space: normal;
-          text-align:left;
         }
+        
         td:before { 
-          /* Now like a table header */
           position: absolute;
-          /* Top/left values mimic padding */
-          top: 0px;
           left: 6px;
-          width: 45%; 
-          padding-right: 10px; 
-          white-space: nowrap;
-          text-align:left;
+          content: attr(data-th);
+          font-weight: bold;
+
+        }
+        td:first-of-type {
           font-weight: bold;
         }
-        td:before {
-          content: attr(data-th);
-        }
+
       }
 
 
