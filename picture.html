@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <picture>
+        <source media="(min-width: 800px)" srcset="full.jpg 1x, full-2x.jpg 2x">
+        <source media="(min-width: 400px)" srcset="small.jpg 1x, small-2x.jpg 2x">
+        <img src="fallback.jpg" id="myImg" alt="Web Fundamentals logo" srcset="fallback-2x.jpg 2x">
+      </picture>
+    </div>
+  </body>
+</html>
