@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch</title>
+    <style type="text/css">
+
+
+      @media screen and (max-width: 500px) {
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+        td { 
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee; 
+          position: relative;
+          padding-left: 50%; 
+          white-space: normal;
+          text-align:left;
+        }
+        td:before { 
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 0px;
+          left: 6px;
+          width: 45%; 
+          padding-right: 10px; 
+          white-space: nowrap;
+          text-align:left;
+          font-weight: bold;
+        }
+        td:before {
+          content: attr(data-th);
+        }
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>1st</th>
+          <th>2nd</th>
+          <th>3rd</th>
+          <th>4th</th>
+          <th>5th</th>
+          <th>6th</th>
+          <th>7th</th>
+          <th>8th</th>
+          <th>9th</th>
+          <th>Final</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-th="Team">Toronto</td>
+          <td data-th="1st">0</td>
+          <td data-th="2nd">0</td>
+          <td data-th="3rd">0</td>
+          <td data-th="4th">4</td>
+          <td data-th="5th">0</td>
+          <td data-th="6th">1</td>
+          <td data-th="7th">0</td>
+          <td data-th="8th">0</td>
+          <td data-th="9th">0</td>
+          <td data-th="Final">5</td>
+        </tr>
+        <tr>
+          <td data-th="Team">San Francisco</td>
+          <td data-th="1st">0</td>
+          <td data-th="2nd">0</td>
+          <td data-th="3rd">0</td>
+          <td data-th="4th">4</td>
+          <td data-th="5th">0</td>
+          <td data-th="6th">0</td>
+          <td data-th="7th">0</td>
+          <td data-th="8th">0</td>
+          <td data-th="9th">0</td>
+          <td data-th="Final">4</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
