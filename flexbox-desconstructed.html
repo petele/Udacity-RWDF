@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch</title>
+    <style type="text/css">
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        height: 100px;
+        text-align: center;
+        width: 100%;
+      }
+
+      header { background-color: red; width: 100%; order: 1;}
+      #box2 { background-color: green; width: 60%; order: 5;}
+      #box3 { background-color: blue; width: 20%; order: 4;}
+      #box4 { background-color: purple; width: 20%; order: 6;}
+      #box5 { background-color: yellow; width: 50%; order: 2;}
+      #box6 { background-color: gray; width: 50%; order: 3;}
+      footer { background-color: orange; width: 100%; order: 3;}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="box">NAV</header>
+      <div id="boxA" class="box">Content A</div>
+      <div id="boxB" class="box">Content B</div>
+      <div id="boxC" class="box">Content C</div>
+      <div id="boxD" class="box">Content D</div>
+      <div id="boxE" class="box">Content E</div>
+      <footer class="box">Footer</footer>
+    </div>
+  </body>
+</html>
