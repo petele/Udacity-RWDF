@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="patterns.css">
+    <style type="text/css">
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 450px) {
+        #boxB, #boxC {
+          width: 50%;
+        }
+      }
+
+      @media screen and (min-width: 550px) {
+        #boxA, #boxB {
+          width: 50%;
+        }
+        #boxC, #boxD, #boxE {
+          width: 33.333333%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="boxA"></div>
+      <div class="box" id="boxB"></div>
+      <div class="box" id="boxC"></div>
+      <div class="box" id="boxD"></div>
+      <div class="box" id="boxE"></div>
+    </div>
+  </body>
+</html>
