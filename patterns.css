@@ -1,5 +1,5 @@
 .box {
-  height: 250px;
+  min-height: 150px;
 }
 
 #boxA {

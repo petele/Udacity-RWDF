@@ -8,6 +8,7 @@
     <style type="text/css">
 
       .container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
       }
@@ -16,31 +17,42 @@
         width: 100%;
       }
 
-      @media screen and (min-width: 450px) {
+      @media screen and (min-width: 500px) {
         #boxA {
-          width: 25%;
+          width: 50%;
         }
-        #boxB {
-          width: 75%;
-        }
-      }
-
-      @media screen and (min-width: 550px) {
-        #boxA, #boxC {
-          width: 25%;
-        }
-         #boxB {
+        #container2 {
           width: 50%;
         }
       }
+
+      @media screen and (min-width: 600px) {
+        #boxA {
+          width: 25%;
+          order: 1;
+        }
+        #container2 {
+          width: 50%;
+        }
+        #boxD {
+          width: 25%;
+          order: -1;
+        }
+
+      }
+
+
 
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="box" id="boxA"></div>
-      <div class="box" id="boxB"></div>
-      <div class="box" id="boxC"></div>
+      <div class="box" id="boxA">A</div>
+      <div class="container" id="container2">
+        <div class="box" id="boxB">B</div>
+        <div class="box" id="boxC">C</div>
+      </div>
+      <div class="box" id="boxD">D</div>
     </div>
   </body>
 </html>
