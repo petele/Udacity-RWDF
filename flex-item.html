@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex Item</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="patterns.css">
+    <style type="text/css">
+
+      .container {
+        width: 100%;
+        display: flex;
+      }
+
+      .box { width: 150px; }
+
+      @media screen and (min-width: 400px) {
+        .dark_blue { order: 2; }
+        .light_blue { order: 4; }
+        .green { order: 1; }
+        .orange { order: 5; }
+        .red { order: 3; }
+      }
+      
+      @media screen and (min-width: 500px) {
+        .dark_blue { order: 4; }
+        .light_blue { order: 1; }
+        .green { order: 2; }
+        .orange { order: 3; }
+        .red { order: 5; }
+      }
+
+      @media screen and (min-width: 600px) {
+        .dark_blue { order: 5; }
+        .light_blue { order: 4; }
+        .green { order: 3; }
+        .orange { order: 2; }
+        .red { order: 1; }
+      }
+
+      @media screen and (min-width: 700px) {
+        .dark_blue { order: 4; }
+        .light_blue { order: 5; }
+        .green { order: 2; }
+        .orange { order: 3; }
+        .red { order: 1; }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="title">Flex Item: <code>order</code></div>
+    <div class="container">
+      <div class="box dark_blue"></div>
+      <div class="box light_blue"></div>
+      <div class="box green"></div>
+      <div class="box orange"></div>
+      <div class="box red"></div>
+    </div>
+  </body>
+</html>

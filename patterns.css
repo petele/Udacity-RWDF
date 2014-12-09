@@ -9,6 +9,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.title {
+  font-size: 2.5em;
+  text-align: center;
+}
+
 .box {
   min-height: 150px;
 }
