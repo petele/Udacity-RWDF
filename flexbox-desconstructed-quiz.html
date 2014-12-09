@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Flexbox Deconstructed Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="patterns.css">
@@ -18,24 +19,24 @@
       }
 
       header { width: 100%; order: 1;}
-      #boxA { width: 33.3333333%; order: 2;}
-      #boxB { width: 33.3333333%; order: 4;}
-      #boxC { width: 50%; order: 5;}
-      #boxD { width: 33.3333333%; order: 3;}
-      #boxE { width: 50%; order: 6;}
+      .dark_blue { width: 33.3333333%; order: 2;}
+      .light_blue { width: 33.3333333%; order: 4;}
+      .green { width: 50%; order: 5;}
+      .red { width: 33.3333333%; order: 3;}
+      .orange { width: 50%; order: 6;}
       footer { width: 100%; order: 7;}
 
     </style>
   </head>
   <body>
     <div class="container">
-      <header class="box">Nav</header>
-      <div id="boxA" class="box">Content A</div>
-      <div id="boxB" class="box">Content B</div>
-      <div id="boxC" class="box">Content C</div>
-      <div id="boxD" class="box">Content D</div>
-      <div id="boxE" class="box">Content E</div>
-      <footer class="box">Footer</footer>
+      <header class="box lime"></header>
+      <div class="box dark_blue"></div>
+      <div class="box light_blue"></div>
+      <div class="box green"></div>
+      <div class="box red"></div>
+      <div class="box orange"></div>
+      <footer class="box seafoam"></footer>
     </div>
   </body>
 </html>

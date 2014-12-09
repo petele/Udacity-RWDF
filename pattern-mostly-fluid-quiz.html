@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Mostly Fluid - Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
     <link rel="stylesheet" type="text/css" href="patterns.css">
     <style type="text/css">
 
@@ -17,22 +17,22 @@
       }
 
       @media screen and (min-width: 450px) {
-        #boxB, #boxC {
+        .light_blue, .green {
           width: 50%;
         }
       }
 
       @media screen and (min-width: 550px) {
-        #boxA {
+        .dark_blue {
           width: 100%;
         }
-        #boxB, #boxC {
+        .light_blue, .green {
           width: 50%;
         }
-        #boxD {
+        .red {
           width: 33.333333%;
         }
-        #boxE {
+        .orange {
           width: 66.666666%;
         }
       }
@@ -49,11 +49,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="box" id="boxA"></div>
-      <div class="box" id="boxB"></div>
-      <div class="box" id="boxC"></div>
-      <div class="box" id="boxD"></div>
-      <div class="box" id="boxE"></div>
+      <div class="box dark_blue"></div>
+      <div class="box light_blue"></div>
+      <div class="box green"></div>
+      <div class="box red"></div>
+      <div class="box orange"></div>
     </div>
   </body>
 </html>

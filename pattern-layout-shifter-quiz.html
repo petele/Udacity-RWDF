@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Layout Shifter Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
     <link rel="stylesheet" type="text/css" href="patterns.css">
     <style type="text/css">
 
@@ -18,30 +18,30 @@
       }
 
       @media screen and (min-width: 500px) {
-        #boxD {
+        .red {
           order: -1;
           width: 50%;
         }
         #container2 {
           width: 50%;
         }
-        #boxA {
+        .dark_blue {
           order: 1;
         }
       }
 
       @media screen and (min-width: 600px) {
-        #boxC {
+        .green {
           order: -1;
         }
-        #boxA {
+        .dark_blue {
           width: 25%;
           order: 2;
         }
         #container2 {
           width: 50%;
         }
-        #boxD {
+        .red {
           width: 25%;
           order: 1;
         }
@@ -54,12 +54,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="box" id="boxA">A</div>
+      <div class="box dark_blue"></div>
       <div class="container" id="container2">
-        <div class="box" id="boxB">B</div>
-        <div class="box" id="boxC">C</div>
+        <div class="box light_blue"></div>
+        <div class="box green"></div>
       </div>
-      <div class="box" id="boxD">D</div>
+      <div class="box red"></div>
     </div>
   </body>
 </html>

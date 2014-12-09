@@ -13,22 +13,30 @@ body {
   min-height: 150px;
 }
 
-#boxA {
+.dark_blue {
   background-color: #2A457A;
 }
 
-#boxB {
+.light_blue {
   background-color: #099DD9;
 }
 
-#boxC {
+.green {
   background-color: #0C8542;
 }
 
-#boxD {
+.lime {
+  background-color: rgb(179, 210, 52);
+}
+
+.seafoam {
+  background-color: rgb(77, 190, 161);
+}
+
+.red {
   background-color: #EC1D3B;
 }
 
-#boxE {
+.orange {
   background-color: #F79420;
 }

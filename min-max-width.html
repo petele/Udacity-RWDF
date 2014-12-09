@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>max-width Media Queries</title>
+    <title>min AND max-width Media Queries</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
@@ -21,7 +21,7 @@
         color: red;
       }
 
-      @media screen and (max-width: 500px) {
+      @media screen and (min-width: 500px) and (max-width: 600px) {
         .yes {
           opacity: 1;
         }
@@ -35,7 +35,7 @@
     <div class="container">
       <h1 class="yes">YES</h1>
       <h1 class="no">NO</h1>
-      <p>@media screen and (max-width: 500px) {...</p>
+      <p>@media screen and (min-width: 500px)  and (max-width: 600px) {...</p>
     </div>
   </body>
 </html>

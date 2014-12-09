@@ -15,7 +15,7 @@
         display: block;
       }
 
-      #boxA, #boxC {
+      .dark_blue, .green {
         position: absolute;
         width: 250px;
         height: 100%;
@@ -33,7 +33,7 @@
         z-index: 1;
       }
 
-      #boxA {
+      .dark_blue {
         /*
         Using translate3d as a trick to improve performance on older versions of Chrome
         See: http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
@@ -43,21 +43,21 @@
         transform: translate(-250px,0);
       }
 
-      #boxB {
+      .light_blue {
         width: 100%;
         position: absolute;
       }
       
-      #boxC {
+      .green {
         left: 100%;
       }
 
-      #boxA.open {
+      .dark_blue.open {
         -webkit-transform: translate(0,0);
         transform: translate(0,0);
       }
 
-      #boxC.open {
+      .green.open {
         -webkit-transform: translate(-250px,0);
         transform: translate(-250px,0);
       }
@@ -70,14 +70,14 @@
           -webkit-flex-flow: row nowrap;
           flex-flow: row nowrap;
         }
-        #boxA {
+        .dark_blue {
           position: relative;
           -webkit-transition: none 0s ease-out;
           transition: none 0s ease-out;
           -webkit-transform: translate(0,0);
           transform: translate(0,0);
         }
-        #boxB {
+        .light_blue {
           position: static;
         }
       }
@@ -86,7 +86,7 @@
         body {
           overflow-x: auto;
         }
-        #boxC {
+        .green {
           position: relative;
           left: auto;
           -webkit-transition: none 0s ease-out;
@@ -100,16 +100,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="box" id="boxA"></div>
-      <div class="box" id="boxB"></div>
-      <div class="box" id="boxC"></div>
+      <div class="box dark_blue" id="left"></div>
+      <div class="box light_blue" id="main"></div>
+      <div class="box green" id="right"></div>
     </div>
 
     <script type="text/javascript">
       var position = 0;
-      var mainPanel = document.getElementById("boxB");
-      var leftDrawer = document.getElementById("boxA");
-      var rightDrawer = document.getElementById("boxC");
+      var mainPanel = document.getElementById("main");
+      var leftDrawer = document.getElementById("left");
+      var rightDrawer = document.getElementById("right");
 
       function toggle(evt) {
         position++;
