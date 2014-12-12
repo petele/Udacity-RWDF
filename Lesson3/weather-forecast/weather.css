@@ -19,27 +19,27 @@ body {
 }
 
 .icon.rain {
-  background-image: url('images/rain.png');
+  background-image: url('../../images/rain.png');
 }
 
 .icon.sunny {
-  background-image: url('images/sunny.png');
+  background-image: url('../../images/sunny.png');
 }
 
 .icon.pc {
-  background-image: url('images/partly_cloudy.png');
+  background-image: url('../../images/partly_cloudy.png');
 }
 
 .icon.sshowers {
-  background-image: url('images/rain_s_cloudy.png');
+  background-image: url('../../images/rain_s_cloudy.png');
 }
 
 .icon.cloudy {
-  background-image: url('images/cloudy.png');
+  background-image: url('../../images/cloudy.png');
 }
 
 .icon.thunder {
-  background-image: url('images/thunderstorms.png');
+  background-image: url('../../images/thunderstorms.png');
 }
 
 .weather-forecast {

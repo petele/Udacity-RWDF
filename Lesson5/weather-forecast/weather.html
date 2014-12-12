@@ -4,10 +4,34 @@
     <title>Weather</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
     <link rel="stylesheet" href="weather.css">
     <link rel="stylesheet" media="screen and (min-width:550px)" href="weather-medium.css">
     <link rel="stylesheet" media="screen and (min-width:700px)" href="weather-large.css">
+    <style type="text/css">
+      @media (min-width: 360px) {
+        body {
+          font-size: 1.0em;
+        }
+      }
+      
+      @media (min-width: 500px) {
+        .seven-day-fc .temp-low,
+        .seven-day-fc .temp-high {
+          display: inline-block;
+          width: 45%;
+        }
+      
+        .seven-day-fc .seven-day-temp {
+          margin-left: 5%;
+        }
+      
+        .seven-day-fc .icon {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="weather-forecast" role="main">
